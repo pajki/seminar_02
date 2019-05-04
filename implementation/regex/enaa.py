@@ -14,64 +14,64 @@ class OverstockParser(RegexParser):
         Parse the document and return JSON with required data.
         """
         self.open_html()
+
+        # Title
+        title_regex = r"<h1 class=\"deptTitle\">(.*)</h1>"
+        title = re.findall(title_regex, self.content)[0].lstrip()
+        # print("title\t", title)
+
+        count_regex = r"<span class=\"deptTitle\">\((.*)\)</span>"
+        count = re.findall(count_regex, self.content)[0].lstrip()
+        # print("count\t", count)
+
+        # Description
+        # desc_regex = r"<h1 class=\"deptTitle\">(.*)</h1>"
+        # desc = re.findall(desc_regex, self.content)[0].lstrip()
+        # print("description\t", desc)
+
+
         result = []
         # regex = r"<td valign=\"top\">(\s*.*){5}<\/td>"
         # select all dispalyed elements
-        regex = r"<td valign=\"top\">\s*<a href(\s*.*){5}<\/td>"
+        regex = r"<div class=\"productboxinner\">(.*)\s+</div>"
         matches = re.finditer(regex, self.content, re.MULTILINE)
 
         for matchNum, match in enumerate(matches, start=1):
-            print("\n\nMatch {matchNum}".format(matchNum=matchNum))
+            # print("\n\nMatch {matchNum}".format(matchNum=matchNum))
             el = match.group()
-            # print(el)
-
-            # Title
-            title_regex = r"<b>(.*)<\/b>"
-            title = re.findall(title_regex, el)[0].lstrip()
-            print("title\t", title)
 
             # Price
-            price_regex = r"<b>\$(.*)<\/b>"
-            price = re.findall(price_regex, el)[0].lstrip()
-            print("price\t", price)
+            price_regex = r"<p class=\"enaa-cena\">(.*)</p>"
+            price = re.findall(price_regex, el)[0].lstrip().replace("&nbsp", " ")
+            # print("price\t", price)
 
-            # List price
-            list_price_regex = r"<s>(.*)<\/s>"
-            list_price = re.findall(list_price_regex, el)[0].lstrip()
-            print("l_price\t", list_price)
+            # Image
+            img_src_regex = r"\s<img(.*)src=(.*)\"\sw"
+            img_src = re.findall(img_src_regex, el)[0][1]
+            # print("img\t", img_src)
 
-            # saving
-            saving_regex = r"<span class=\"littleorange\">\$(.*)\s"
-            saving = re.findall(saving_regex, el)[0].lstrip()
-            print("saving\t", saving)
-
-            # saving_percent
-            saving_percent_regex = r"<span class=\"littleorange\">\$.*\s\((.*)\)"
-            saving_percent = re.findall(saving_percent_regex, el)[0].lstrip()
-            print("s_per\t", saving_percent)
+            item_title_regex = r"<div class=\"caption-name\">\s<a(.*)>(.*)</a>"
+            item_title = re.findall(item_title_regex, el)[0][1].lstrip()
+            # print("item_title\t", item_title)
 
             result.append({
-                "title": title,
-                "list_price": list_price,
                 "price": price,
-                "saving": saving,
-                "saving_percent": saving_percent,
+                "img_src": img_src,
+                "item_title": item_title
             })
 
-        content_regex = r"<span class=\"normal\">([\s\w.,\-()'\"+;:]*)<br><a"
+        tmp = {
+            "title": title,
+            "count": count,
+            "items": result
+        }
 
-        matches = re.finditer(content_regex, self.content, re.MULTILINE)
+        # print(tmp)
 
-        for matchNum, match in enumerate(matches, start=0):
-            for groupNum in range(0, len(match.groups())):
-                groupNum = groupNum + 1
-                c = match.group(groupNum)
-                result[matchNum]['content'] = c.replace('\n', ' ')
-
-        return result
+        return tmp
 
 
 if __name__ == "__main__":
-    op = OverstockParser("enaa.com/Tablični računalniki | EnaA.com.html")
+    op = OverstockParser("enaa.com/enaa.html")
     r = op.run()
     print(r)
