@@ -1,0 +1,4 @@
+(function($){$.fn.readMoreFade=function(options){var settings=$.extend({backgroundColor:"white",buttonClass:"button"},options);this.css("height",40);this.css("overflow","hidden");this.css("position","relative");this.append('<p class="readMoreFade"><a href="#" class="'+settings.buttonClass+' hidden"> + Prikaži več</a></p>')
+var readMoreButton=this.find('.readMoreFade');var backgroundString=settings.backgroundColor?settings.backgroundColor:this.css('background-color');readMoreButton.click(function(){totalHeight=80
+$el=$(this);$p=$el;$up=$p.parent();$ps=$up.find(" p:not('.readMoreFade')");$ps.each(function(){totalHeight+=$(this).outerHeight();});$ps=$up.find("H2");$ps.each(function(){totalHeight+=$(this).outerHeight()+22;});$ps=$up.find("UL");$ps.each(function(){totalHeight+=$(this).outerHeight();});$up.css({"max-height":9999}).animate({"height":totalHeight});$p.fadeOut();return false;})
+return this;};}(jQuery));
