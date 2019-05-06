@@ -101,7 +101,7 @@ class RoadRunner:
         doc1 = self.pre_process(self.content_1, self.css1)
         doc2 = self.pre_process(self.content_2, self.css2)
 
-        # print(doc2.prettify())
+        # print(doc1.prettify())
         parse(doc1, doc2)
 
         return doc1
@@ -113,11 +113,16 @@ if __name__ == "__main__":
     #                "body > div:nth-of-type(8) > div:nth-of-type(3) > div",
     #                "body > div:nth-of-type(9) > div:nth-of-type(3) > div").run()
 
-    rr = RoadRunner("overstock.com/jewelry01.html",
-                    "overstock.com/jewelry02.html",
-                    ("body > table:nth-of-type(2) > tbody > tr > td:nth-of-type(5) > table > tbody > "
-                     "tr:nth-of-type(2) > td > table > tbody > tr > td > table > tbody > tr"),
-                    ("body > table:nth-of-type(2) > tbody > tr > td:nth-of-type(5) > table > tbody > "
-                     "tr:nth-of-type(2) > td > table > tbody > tr > td > table > tbody > tr")).run()
+    # rr = RoadRunner("overstock.com/jewelry01.html",
+    #                "overstock.com/jewelry02.html",
+    #                ("body > table:nth-of-type(2) > tbody > tr > td:nth-of-type(5) > table > tbody > "
+    #                 "tr:nth-of-type(2) > td > table > tbody > tr > td > table > tbody > tr"),
+    #                ("body > table:nth-of-type(2) > tbody > tr > td:nth-of-type(5) > table > tbody > "
+    #                 "tr:nth-of-type(2) > td > table > tbody > tr > td > table > tbody > tr")).run()
+
+    rr = RoadRunner("enaa.com/enaa.html",
+                    "enaa.com/enaa2.html",
+                    "body > div:nth-of-type(3) > div > div:nth-of-type(3) > div:nth-of-type(3) > div",
+                    "body > div:nth-of-type(3) > div > div:nth-of-type(3) > div:nth-of-type(3) > div").run()
 
     print(rr.prettify(formatter=None))
