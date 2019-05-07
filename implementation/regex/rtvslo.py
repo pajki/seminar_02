@@ -64,6 +64,6 @@ if __name__ == "__main__":
     r = op.run()
     print(r)
 
-    op = RtvsloParser("rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html")
+    op = RtvsloParser("rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html")
     r = op.run()
     print(r)
