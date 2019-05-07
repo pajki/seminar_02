@@ -7,7 +7,7 @@
         var rand=new Date().getTime();
         var domain = window.location.hostname;
         var pageUrl = encodeURIComponent(window.location);
-        var imgUrl = "http://script.dotmetrics.net/hit.gif?id=2411&url=" + pageUrl + "&dom=" + domain + "&r=" + rand;
+        var imgUrl = "http://script.dotmetrics.net/hit.gif?id=3715&url=" + pageUrl + "&dom=" + domain + "&r=" + rand;
         if(document.location.protocol == 'https:'){
 	        imgUrl = imgUrl.replace('http://', 'https://');
         }
@@ -45,10 +45,10 @@
                                     DataUrl: "http://script.dotmetrics.net/SiteEvent.dotmetrics",
                                     PostUrl: "http://script.dotmetrics.net/DeviceInfo.dotmetrics",
                                     ScriptUrl:  "http://script.dotmetrics.net/Scripts/script.v57.js?v=110",
-                                    ScriptDebugUrl:  "http://demo-script.dotmetrics.net/Scripts/script.debug.js?v=4b3510f5-3452-4590-8145-8c55f6c052e4",
+                                    ScriptDebugUrl:  "http://demo-script.dotmetrics.net/Scripts/script.debug.js?v=07d8d554-9c5b-4a29-a030-758c78c95d9b",
                                     PingUrl: "http://script.dotmetrics.net/Ping.dotmetrics",
                                     AjaxEventUrl: "http://script.dotmetrics.net/AjaxEvent.dotmetrics",
-                                    SiteSectionId: 2411,
+                                    SiteSectionId: 3715,
                                     SiteId: 438,
                                     FlashUrl: "http://script.dotmetrics.net/Scripts/DotMetricsFlash.swf",
                                     TimeOnPage: 'DotMetricsTimeOnPage',

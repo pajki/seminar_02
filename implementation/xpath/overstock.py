@@ -39,5 +39,5 @@ class OverstockParser(XpathParser):
 
 
 if __name__ == "__main__":
-    op = OverstockParser("overstock.com/jewelry01.html")
-    op.run()
+    op = OverstockParser("overstock.com/jewelry02.html")
+    print(op.run())

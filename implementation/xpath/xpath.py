@@ -1,6 +1,6 @@
 from os.path import realpath, dirname
 
-from lxml.etree import HTMLParser, parse
+from lxml.etree import HTMLParser, parse, HTML
 
 
 class XpathParser:
@@ -14,5 +14,5 @@ class XpathParser:
         """
         Open the html page with lxml.
         """
-        with open(self.webpage) as webpage:
-            self.content = parse(webpage, HTMLParser())
+        with open(self.webpage, encoding='latin1') as webpage:
+            self.content = HTML(webpage.read().replace('\n', ''))
