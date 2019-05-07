@@ -1,6 +1,6 @@
 from os.path import realpath, dirname
 
-from lxml.etree import HTMLParser, parse, HTML
+from lxml.etree import HTML
 
 
 class XpathParser:
