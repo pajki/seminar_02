@@ -34,10 +34,11 @@ class OverstockParser(XpathParser):
                 "saving_percent": saving_content[1][1:-1],
             })
 
-        print("Number of parsed elements: " + str(len(result)))
         return dumps(result)
 
 
 if __name__ == "__main__":
+    op = OverstockParser("overstock.com/jewelry01.html")
+    print(op.run())
     op = OverstockParser("overstock.com/jewelry02.html")
     print(op.run())

@@ -31,8 +31,6 @@ class EnaaParser(XpathParser):
                 "img_src": img_src,
                 "item_title": item_title,
             })
-
-        print("Number of parsed elements: " + str(len(results)))
         return dumps({
             "title": title,
             "count": count,
@@ -41,5 +39,7 @@ class EnaaParser(XpathParser):
 
 
 if __name__ == "__main__":
-    op = EnaaParser("enaa.com/enaa2.html")
-    print(op.run())
+    ep = EnaaParser("enaa.com/enaa.html")
+    print(ep.run())
+    ep = EnaaParser("enaa.com/enaa2.html")
+    print(ep.run())
