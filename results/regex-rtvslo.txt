@@ -1,0 +1,21 @@
+Page Audi A6:
+
+{
+	"author": "Miha Merljak",
+	"published_time": "28. december 2018 ob 08:51  Ljubljana - MMC RTV SLO ",
+	"title": "Audi A6 50 TDI quattro: nemir v premijskem razredu",
+	"sub_title": "Test nove generacije",
+	"lead": "To je novi audi A6. V razred najdra\u00c5\u00bejih in najbolj premijskih \u00c5\u00berebcev je vnesel nemir, \u00c5\u00a1e preden je sploh zapeljal na parkirni prostor, rezerviran za izvr\u00c5\u00a1nega direktorja. ",
+	"content": "Samo poglejte njegovo masko \u00e2\u0080\u0093 to ogromno satovje z radarji na takem polo\u00c5\u00beaju, da se ti na avtocesti tudi pri 120 km/h vsi spo\u00c5\u00a1tljivo umikajo, saj so prepri\u00c4\u008dani, da gre za Pahorjev ali \u00c5\u00a0ar\u00c4\u008dev avto. Seveda, novi A6 lahko cesto in promet skenira s kar petimi radarji, petimi kamerami, infrarde\u00c4\u008do kamero za no\u00c4\u008dni vid, dvanajstimi ultrazvo\u00c4\u008dnimi senzorji in laserskim \u00c4\u008ditalnikom \u00e2\u0080\u0093 lidarjem. V glavnem voja\u00c5\u00a1ka tehnologija v slu\u00c5\u00bebi varnosti za fante, ki smo radi gledali Top Gun, Bonda in druge mo\u00c5\u00beakarja s finimi igra\u00c4\u008dami.Novo poglavjeVozni\u00c5\u00a1ki delovni prostor je novo poglavje digitalne dobe, z dvema ogromnima zaslonoma, ki tako kot naprednej\u00c5\u00a1i telefoni dregnejo blazinice va\u00c5\u00a1ih prstov, kot se sprehajate po steklu. A \u00c5\u00a1e bolj se nam zdi pomembno, da so osnovna stikala tam, kjer jih pri\u00c4\u008dakujete. Najprej so torej zagotovili enostavno osnovo, tisti bolj \"advanced\" vozniki pa si lahko nato vse skupaj \u00c5\u00a1e veliko bolj prilagodijo. Velik korak naprej pri kabinskem udobju zaznavajo tudi na zadnji klopi, tam je prostora v vseh smereh precej ve\u00c4\u008d.\u00c4\u008ce vam pogled na Audijev spisek dodatne opreme ne odvzame volje do \u00c5\u00beivljenja, potem vsekakor toplo priporo\u00c4\u008damo nakup zra\u00c4\u008dnega vzmetenja, saj dobi z njim A6 ve\u00c4\u008d razli\u00c4\u008dnih in vozni\u00c5\u00a1ko zelo uporabnih karakterjev.Enako velja za seksi lu\u00c4\u008di z inteligentno matri\u00c4\u008dno osvetlitvijo, pa za \u00c5\u00a1portno podvozje in vsekakor za \u00c5\u00a1tirikolesno krmiljenje. S tem postane A6 med ovinki v ob\u00c4\u008dutku na volanu \u00c5\u00a1e veliko kraj\u00c5\u00a1i in bolj agilen. Vse na\u00c5\u00a1teto smo presku\u00c5\u00a1ali v dru\u00c5\u00bebi agregata 50 TDI, ki je v resnici klasi\u00c4\u008dni trilitrski dizel, podkrepljen z elektromotorjem. Ja, ta audi je mehki hibrid z izjemnim navorom in dovolj mo\u00c4\u008di kadar koli in kjer koli. Si pa mislimo, da bo najve\u00c4\u008dji del trga zadovoljil \u00c5\u00bee u\u00c4\u008dinkovit dvolitrski mehki hibrid z mo\u00c4\u008djo 150 kilovatov.Klju\u00c4\u008dni tehni\u00c4\u008dni podatki:- na testu Audi A6 50 TDI quattro tiptronicMere:- dol\u00c5\u00beina: 4,9 m- medosna razdalja: 2,9 m- obra\u00c4\u008dalni krog: 12,1 m- prtlja\u00c5\u00benik: 530 l- masa: 1.900 kgPogon:- trilitrski \u00c5\u00a1estvaljni dizelski motor- mo\u00c4\u008d: 210 kW- navor: 620 Nm- 8-stopenjski samodejni menjalnik- pogon na vsa \u00c5\u00a1tiri kolesa- pnevmatike: 225/60 R17- poraba: 6,6 l/100 km = 8,9 EUR/100 km- posoda za gorivo: 73 l- doseg: 1.106 km- izpusti CO2: 147 g/kmStro\u00c5\u00a1ki pri 15.000 km in 5-letni uporabi:- nakupna cena: 69.080 EUR- stro\u00c5\u00a1ki finan\u00c4\u008dnega lizinga: 4.463 EUR/5 let- stro\u00c5\u00a1ki registracije: 10.829 EUR/5 let- stro\u00c5\u00a1ki vzdr\u00c5\u00beevanja: 1.926 EUR/5 let- stro\u00c5\u00a1ki goriva: 6.702 EUR/75.000 km- stro\u00c5\u00a1ek 1 kompleta pnevmatik: 716 EUR- vrednosti po 5 letih po Eurotaxu: 33.964 EUR- stro\u00c5\u00a1ki skupaj: 1.001 EUR/mesec"
+}
+
+Page Volvo XC:
+
+{
+	"author": "Miha Merljak",
+	"published_time": "25. januar 2019 ob 15:23  Ljubljana - MMC RTV SLO ",
+	"title": "Volvo XC 40 D4 AWD momentum: suvereno med najbolj\u00c5\u00a1e v razredu",
+	"sub_title": "Test novega modela",
+	"lead": "XC 40 je najmanj\u00c5\u00a1i Volvov SUV, ki se oblikovno skoraj v celotni naslanja na oba ve\u00c4\u008dja predhodnika. \u00c5\u00bde samo s tem so mu vrata do denarnic tistih kupcev, ki i\u00c5\u00a1\u00c4\u008dejo izstopajo\u00c4\u008do, a hkrati visoko kultivirano in pre\u00c4\u008di\u00c5\u00a1\u00c4\u008deno dizajnersko govorico, na pol odprta.",
+	"content": ""
+}

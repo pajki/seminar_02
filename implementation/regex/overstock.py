@@ -1,4 +1,5 @@
 import re
+from json import dumps
 
 from implementation.regex.regex import RegexParser
 
@@ -21,34 +22,34 @@ class OverstockParser(RegexParser):
         matches = re.finditer(regex, self.content, re.MULTILINE)
 
         for matchNum, match in enumerate(matches, start=1):
-            print("\n\nMatch {matchNum}".format(matchNum=matchNum))
+            # print("\n\nMatch {matchNum}".format(matchNum=matchNum))
             el = match.group()
             # print(el)
 
             # Title
             title_regex = r"<b>(.*)<\/b>"
             title = re.findall(title_regex, el)[0].lstrip()
-            print("title\t", title)
+            # print("title\t", title)
 
             # Price
             price_regex = r"<b>\$(.*)<\/b>"
             price = re.findall(price_regex, el)[0].lstrip()
-            print("price\t", price)
+            # print("price\t", price)
 
             # List price
             list_price_regex = r"<s>(.*)<\/s>"
             list_price = re.findall(list_price_regex, el)[0].lstrip()
-            print("l_price\t", list_price)
+            # print("l_price\t", list_price)
 
             # saving
             saving_regex = r"<span class=\"littleorange\">\$(.*)\s"
             saving = re.findall(saving_regex, el)[0].lstrip()
-            print("saving\t", saving)
+            # print("saving\t", saving)
 
             # saving_percent
             saving_percent_regex = r"<span class=\"littleorange\">\$.*\s\((.*)\)"
             saving_percent = re.findall(saving_percent_regex, el)[0].lstrip()
-            print("s_per\t", saving_percent)
+            # print("s_per\t", saving_percent)
 
             result.append({
                 "title": title,
@@ -68,7 +69,7 @@ class OverstockParser(RegexParser):
                 c = match.group(groupNum)
                 result[matchNum]['content'] = c.replace('\n', ' ')
 
-        return result
+        return dumps(result)
 
 
 if __name__ == "__main__":

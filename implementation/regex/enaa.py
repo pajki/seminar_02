@@ -1,13 +1,13 @@
 import re
+from json import dumps
 
 from implementation.regex.regex import RegexParser
 
 
-class OverstockParser(RegexParser):
+class EnaaParser(RegexParser):
 
     def __init__(self, page):
         RegexParser.__init__(self, page)
-
 
     def run(self):
         """
@@ -68,10 +68,14 @@ class OverstockParser(RegexParser):
 
         # print(tmp)
 
-        return tmp
+        return dumps(tmp)
 
 
 if __name__ == "__main__":
-    op = OverstockParser("enaa.com/enaa.html")
+    op = EnaaParser("enaa.com/enaa.html")
+    r = op.run()
+    print(r)
+
+    op = EnaaParser("enaa.com/enaa2.html")
     r = op.run()
     print(r)
