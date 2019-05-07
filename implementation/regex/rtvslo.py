@@ -4,7 +4,7 @@ import re
 from implementation.regex.regex import RegexParser
 
 
-class OverstockParser(RegexParser):
+class RtvsloParser(RegexParser):
 
     def __init__(self, page):
         RegexParser.__init__(self, page)
@@ -60,10 +60,10 @@ class OverstockParser(RegexParser):
 
 
 if __name__ == "__main__":
-    op = OverstockParser("rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html")
+    op = RtvsloParser("rtvslo.si/Audi A6 50 TDI quattro_ nemir v premijskem razredu - RTVSLO.si.html")
     r = op.run()
     print(r)
 
-    op = OverstockParser("rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html")
+    op = RtvsloParser("rtvslo.si/Volvo XC 40 D4 AWD momentum_ suvereno med najboljše v razredu - RTVSLO.si.html")
     r = op.run()
     print(r)
